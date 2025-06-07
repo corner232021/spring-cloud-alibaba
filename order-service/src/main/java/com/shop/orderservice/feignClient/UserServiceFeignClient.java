@@ -8,5 +8,5 @@ import org.springframework.web.bind.annotation.RequestBody;
 @FeignClient(value = "point-service")
 public interface UserServiceFeignClient {
     @PostMapping(value = "/point/add")
-    public String addUser(@RequestBody Order order);
+    String addUser(@RequestBody Order order);
 }

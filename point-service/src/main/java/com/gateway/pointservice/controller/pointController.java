@@ -15,7 +15,7 @@ public class pointController {
     }
 
     @PostMapping("/add")
-    public String 调用addPoint成功(@RequestBody Order order){
+    public String addPoint(@RequestBody Order order){
         return "调用addPoint成功2222！商品名称为：" + order.getProductionName();
     }
 }
